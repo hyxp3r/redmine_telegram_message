@@ -80,6 +80,7 @@ print(list_r4)
 for page in range(pages):
     r_3 = requests.get(f"{base_url}/issues.json?key={api_key}&offset={offset}&limit={limit}&utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=cf_26&op%5Bcf_26%5D=%3D&v%5Bcf_26%5D%5B%5D=%D0%A1%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE&f%5B%5D=cf_43&op%5Bcf_43%5D=%21*&f%5B%5D=cf_27&op%5Bcf_27%5D=%21*&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=cf_2&c%5B%5D=subject&c%5B%5D=cf_4&c%5B%5D=cf_5&c%5B%5D=cf_6&c%5B%5D=cf_7&c%5B%5D=estimated_hours&group_by=&t%5B%5D=estimated_hours&t%5B%5D=cf_4&t%5B%5D=cf_5&t%5B%5D=cf_6&t%5B%5D=cf_7&t%5B%5D=").json()
     list_r3=r_3['issues']
+    
     for i in range(len(list_r3)) :
         for j in range(len(list_r3[i]['custom_fields'])):
            # print(i, j)
@@ -105,6 +106,8 @@ for page in range(pages):
                     x3 += 1
                 else:
                     pass
+
+                break
 
     time.sleep(1)
     offset = page * limit
@@ -141,6 +144,7 @@ for page in range(pages):
                     x5 += 1
                 else:
                     pass
+                break
 
     time.sleep(1)
     offset = page * limit
