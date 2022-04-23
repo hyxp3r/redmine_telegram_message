@@ -3,7 +3,7 @@ import pandas as pd
 import time
 import os
 from dotenv import load_dotenv
-load_dotenv(".env")
+load_dotenv("/home/e.n.ermakov@university.local/Documents/VS_Code/Python/Redmine/.env")
 
 def telegram_bot_sendtext(bot_message):
 
