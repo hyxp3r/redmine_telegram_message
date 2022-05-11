@@ -45,6 +45,9 @@ r_15 = requests.get(f"{base_url}/issues.json?key={api_key}&offset={offset}&limit
 r_16 = requests.get(f"{base_url}/issues.json?key={api_key}&offset={offset}&limit=1&utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=o&f%5B%5D=cf_3&op%5Bcf_3%5D=%3D&v%5Bcf_3%5D%5B%5D=6%09%D0%9D%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F+%D0%B4%D0%B5%D1%8F%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C&f%5B%5D=cf_27&op%5Bcf_27%5D=%21*&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=subject&c%5B%5D=cf_4&c%5B%5D=cf_5&c%5B%5D=cf_6&c%5B%5D=cf_7&c%5B%5D=estimated_hours&c%5B%5D=cf_27&c%5B%5D=cf_26&group_by=tracker&t%5B%5D=estimated_hours&t%5B%5D=cf_4&t%5B%5D=cf_5&t%5B%5D=cf_6&t%5B%5D=cf_7&t%5B%5D=").json()
 r_17 = requests.get(f"{base_url}/issues.json?key={api_key}&offset={offset}&limit=1&utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=o&f%5B%5D=tracker_id&op%5Btracker_id%5D=%3D&v%5Btracker_id%5D%5B%5D=11&f%5B%5D=cf_27&op%5Bcf_27%5D=%21*&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=subject&c%5B%5D=cf_4&c%5B%5D=cf_5&c%5B%5D=cf_6&c%5B%5D=cf_7&c%5B%5D=estimated_hours&c%5B%5D=cf_27&group_by=tracker&t%5B%5D=estimated_hours&t%5B%5D=cf_4&t%5B%5D=cf_5&t%5B%5D=cf_6&t%5B%5D=cf_7&t%5B%5D=").json()
 
+r_18 = requests.get(f"{base_url}/issues.json?key={api_key}&offset={offset}&limit=1&utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=cf_27&op%5Bcf_27%5D=%3D&v%5Bcf_27%5D%5B%5D=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%B4%D0%BE%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D1%83&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=cf_2&c%5B%5D=subject&c%5B%5D=cf_4&c%5B%5D=cf_5&c%5B%5D=cf_6&c%5B%5D=cf_7&c%5B%5D=estimated_hours&group_by=&t%5B%5D=estimated_hours&t%5B%5D=cf_4&t%5B%5D=cf_5&t%5B%5D=cf_6&t%5B%5D=cf_7&t%5B%5D=").json()
+r_19 = requests.get(f"{base_url}/issues.json?key={api_key}&offset={offset}&limit=1&utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=cf_26&op%5Bcf_26%5D=%3D&v%5Bcf_26%5D%5B%5D=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%B4%D0%BE%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D1%83&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=cf_2&c%5B%5D=subject&c%5B%5D=cf_4&c%5B%5D=cf_5&c%5B%5D=cf_6&c%5B%5D=cf_7&c%5B%5D=estimated_hours&group_by=&t%5B%5D=estimated_hours&t%5B%5D=cf_4&t%5B%5D=cf_5&t%5B%5D=cf_6&t%5B%5D=cf_7&t%5B%5D=").json()
+r_20 = requests.get(f"{base_url}/issues.json?key={api_key}&offset={offset}&limit=1&utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=cf_43&op%5Bcf_43%5D=%3D&v%5Bcf_43%5D%5B%5D=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%B4%D0%BE%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D1%83&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=cf_2&c%5B%5D=subject&c%5B%5D=cf_4&c%5B%5D=cf_5&c%5B%5D=cf_6&c%5B%5D=cf_7&c%5B%5D=estimated_hours&group_by=&t%5B%5D=estimated_hours&t%5B%5D=cf_4&t%5B%5D=cf_5&t%5B%5D=cf_6&t%5B%5D=cf_7&t%5B%5D=").json()
 x1 = str(r_1['total_count'])
 x2 = str(r_2['total_count'])
 
@@ -63,6 +66,10 @@ x15 = str(r_15['total_count'])
 x16 = str(r_16['total_count'])
 x17 = str(r_17['total_count'])
 
+y1 = int(r_18['total_count'])
+y2 = int(r_19['total_count'])
+y3 = int(r_19['total_count'])
+y = y1+y2+y3
 
 pages = r_3['total_count'] // limit + 1
 
@@ -162,6 +169,7 @@ text = f'''
 - <b>{x4}</b> задач без визы ректора, из них <b>{x5}</b> задач может согласовать ПАО. 
 
 На согласовании у деканов <b>{x6}</b> задач: ФБП - <b>{x7}</b>, ФГС: - <b>{x8}</b>, ФКЭП - <b>{x9}</b>, ЮФ - <b>{x10}</b>.
+Отправлено на доработку <b>{y}</b> задач, из них <b>{y1}</b> деканами, <b>{y2}</b> АУП и <b>{y3}</b> ректором.
 
 На согласовании у АУП: 
 - <b>{x11}</b> - Калинин ДС
