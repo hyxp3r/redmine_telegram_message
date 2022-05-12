@@ -68,7 +68,7 @@ x17 = str(r_17['total_count'])
 
 y1 = int(r_18['total_count'])
 y2 = int(r_19['total_count'])
-y3 = int(r_19['total_count'])
+y3 = int(r_20['total_count'])
 y = y1+y2+y3
 
 pages = r_3['total_count'] // limit + 1
